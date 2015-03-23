@@ -102,6 +102,7 @@
 				//
 				// At long last!
 				//
+                var_dump(config('doctrine.connection'));
 				return EntityManager::create(config('doctrine.connection'), $doctrineConfig, $eventManager);
 
 			});
