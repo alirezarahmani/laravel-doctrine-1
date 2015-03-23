@@ -3,58 +3,17 @@
 	/*
 	 * Metadata Driver Configuration
 	 */
-	/*
-	'metadata' => [
 
+	'metadata' => [
 		'driver' => 'config',
 
-		//
-		// Alternatively, if you want to use a chain, specify multiple drivers as nested arrays.
-		//
 		[
 			'driver' => 'config'
 		],
 		[
 			'driver' => 'annotation',
-			'namespace' => 'App'
+		
 		]
-		//
-		// ...accepting PRs for more!
-
-	],
-	*/
-
-	'mappings' => [
-
-		'App\MyModel' => [
-
-			'table' => 'my_model',
-
-			'abstract' => false,
-
-			'repository' => 'App\Repository\MyModel',
-
-			'fields' => [
-
-				'id' => [
-					'type' => 'integer',
-					'strategy' => 'identity'
-				],
-
-				'name' => [
-					'type' => 'string',
-					'nullable' => false,
-				]
-
-			],
-
-			'indexes' => [
-				'name'
-			],
-
-		],
-
-	],
 
 	/*
 	 * By default, this package mimics the database configuration from Laravel.
